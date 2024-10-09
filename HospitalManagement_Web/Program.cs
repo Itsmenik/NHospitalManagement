@@ -7,6 +7,7 @@ using Hospital.Model;
 
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Hopital.Uitility;
+using Hospital.Services;
 
 
 
@@ -27,10 +28,12 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.S
 // Register additional services
 builder.Services.AddScoped<IDefaultUserIntializer, DefaultUserIntializer>();
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IEmailSender, EmailSender>();
+builder.Services.AddScoped<IEmailSender, EmailSender>();  
+builder.Services.AddTransient<IHospitalInfo, HospitalInofServices>();
 builder.Services.AddRazorPages();
 
-var app = builder.Build();
+var app = builder.Build(); 
+
 
 // Call DataSedding to initialize the default users and roles
 DataSedding();
@@ -51,7 +54,7 @@ app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{Area=Patient}/{controller=Home}/{action=Index}/{id?}");
+    pattern: "{Area=admin}/{controller=Hospital}/{action=Index}/{id?}");
 
 app.Run();
 

@@ -791,3 +791,12 @@ C:\Users\NIKHIL\Desktop\HospitalManagement\HospitalManagement_Web-master\Hospita
 C:\Users\NIKHIL\Desktop\HospitalManagement\HospitalManagement_Web-master\HospitalManagement_Web-master\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.pdb
 C:\Users\NIKHIL\Desktop\HospitalManagement\HospitalManagement_Web-master\HospitalManagement_Web-master\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.genruntimeconfig.cache
 C:\Users\NIKHIL\Desktop\HospitalManagement\HospitalManagement_Web-master\HospitalManagement_Web-master\HospitalManagement_Web\obj\Debug\net8.0\ref\HospitalManagement_Web.dll
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.AssemblyInfo.cs
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\HospitalManagement\NHospitalManagement\HospitalManagement_Web\obj\Debug\net8.0\HospitalManagement_Web.sourcelink.json

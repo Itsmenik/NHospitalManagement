@@ -11,10 +11,8 @@ namespace Hospital.Repositery
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
         {
-            
-        }
 
-       
+        }
 
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
@@ -51,9 +49,6 @@ namespace Hospital.Repositery
                 .HasForeignKey(a => a.PatientId)
                 .OnDelete(DeleteBehavior.NoAction); // No cascading delete for PatientId
         }
-
-
-
 
     }
 }

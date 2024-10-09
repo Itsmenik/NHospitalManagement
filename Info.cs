@@ -937,4 +937,211 @@ then we override the onModelCreation -->
 }
 
 
-After all this we sucessfully able to create the table 
+After all this we sucessfully able to create the table
+-------------------------------------------------------------------- 
+
+Now we hve to go into Area we hve to add the controller with the  name 
+ --->  HospitalController.cs    after that we are going to add the Servic e in the Depandency Injection  
+
+builder.Services.AddTransient<IHospitalInfo, HospitalInofServices>(); 
+
+then ithe Area.Admin.Contoller we have create a controller from where in got th data 
+
+here is  the code where ----> 
+
+
+namespace HospitalManagement_Web.Areas.Admin.Controllers
+{
+    public class HospitalController : Controller
+    {
+        private IHospitalInfo _hospitalInfo;
+        // purpose of using this that we can insert a Hospital and then 
+        public HospitalController(IHospitalInfo hospitalInfo)
+        {
+            _hospitalInfo = hospitalInfo;
+        }
+
+        public IActionResult Index() // right click on the Index and then go Add razor page 
+            // in the razor select the  List and then we have  and select the Mode --> (Hospitla.Viewmodel) 
+        {
+            return View();
+        }
+    }
+} 
+
+here is the code that is genertated in  the View --> 
+    
+
+    @using Hopital.Uitility // we are importing the Utility because in the Utitlity we have t
+   // ViewModel 
+@model PageResult<Hospital.ViewModel.HospitalInfoViewModel>
+
+@{
+    ViewData["Title"] = "Hospital";
+}
+
+<h1>Hospital</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+              Id
+            </th>
+            <th>
+             Name
+            </th>
+            <th>
+              Type
+            </th>
+            <th>
+             City
+            </th>
+            <th>
+              PinCode
+            </th>
+            <th>
+              Country
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Data) { Changed from Model To  Model.DATA  
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PinCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id= item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id= item.Id}) |
+                @Html.ActionLink("Delete", "Delete", new { id= item.Id })
+            </td> // here is the button on the click of that we are sending  
+            // we are sending the id of that particular item 
+        </tr>
+}
+    </tbody>
+</table>
+
+  ---> we can use this for  the pagination 
+
+
+< cs - pager cs - paging - pagesize = (int)Model.PageSize
+cs - paging - pagenumber = (int)Model.PageNumber
+cs - paging - totalitems = (int)Model.TotalItems
+cs - pagenumber - param = "pageNumber"
+asp - controller = "RoomType"
+
+
+ Typo asp-action="Index" 
+ co-pagor-li-current-class= "page-iton activo"
+ cs - pager - 11 - other -class= "page-iter"
+ cs - pager - 11 - non - active class= "page ites disabled"
+ co - pagar - Link - current -class= "page-link"
+ cs - pager Link - other -class= "page-link" > </ cs - pager >
+
+
+In the same we ahve to add the Cs pager so we can add the functionality of pagging 
+    in each and every page 
+
+Now in to use the feature of the pagging we hve  to add the pacakge 
+    name --> CloudScriber (So we have to install the CloudScriber ) 
+ 
+we have to install the package name (cloudscribe.Web.Pagination)  
+
+then we have  to go into the viewImport.Cshtml where we have to mention the package 
+    name so it is availabel for the each and every page  
+     
+
+    here is the modified Hospital Controller 
+
+    using Hospital.Services;
+using Hospital.ViewModel;
+using Microsoft.AspNetCore.Mvc;
+
+namespace HospitalManagement_Web.Areas.Admin.Controllers
+{
+    public class HospitalController : Controller
+    {
+        private IHospitalInfo _hospitalInfo;
+        // purpose of using this that we can insert a Hospital and then 
+        public HospitalController(IHospitalInfo hospitalInfo)
+        {
+            _hospitalInfo = hospitalInfo;
+        }
+
+        public IActionResult Index(int pagNumber = 1, int pageSize = 10)
+        {
+            return View(_hospitalInfo.GetAll(pagNumber, pageSize));
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)   Add view Select VieModel and edit 
+        {
+            var viewModel = _hospitalInfo.GetHospitalById(id);
+            return View(viewModel);
+        } //from this action we get the all the info of that hospital to show 
+        // on the particular page 
+
+        [HttpPost]
+
+
+        public IActionResult Edit(HospitalInfoViewModel viewModel)
+        {
+            _hospitalInfo.UpdateHospitalInfo(viewModel);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+
+        public IActionResult Create() // create the View 
+        {
+            return View();
+        }
+
+        public IActionResult Create(HospitalInfoViewModel model)
+        {
+            _hospitalInfo.InsertHospitalInfo(model);
+            return RedirectToAction("Index");
+
+        }
+
+        public IActionResult Delete(int id)
+        {
+            _hospitalInfo.DeleteHospitalInfo(id);
+            return RedirectToAction("Index");
+
+        }
+    }
+}  
+Now we going to configure the Router to check this  
+    at the first we got the errror that the localhost not foune
+    fort that we have to gon into the controller and then give the the Area name  
+    [Area("Admin")]
+
+then run the application -->(Go to create where we have the Id Input is also coming just remove it fro the html 
+we have to remove this part and the error is gone 
+<div class= "form-group" >
+     < label asp -for= "Id" class= "control-label" ></ label >
+     < input asp -for= "Id" class= "form-control" />
+     < span asp - validation -for= "Id" class= "text-danger" ></ span >
+ </ div >
+

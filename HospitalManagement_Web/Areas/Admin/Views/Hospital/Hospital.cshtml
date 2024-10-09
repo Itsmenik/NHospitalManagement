@@ -1,0 +1,83 @@
+﻿@using Hopital.Uitility
+@model PageResult<Hospital.ViewModel.HospitalInfoViewModel>
+
+@{
+    ViewData["Title"] = "Hospital";
+}
+
+<h1>Hospital</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+              Id
+            </th>
+            <th>
+             Name
+            </th>
+            <th>
+              Type
+            </th>
+            <th>
+             City
+            </th>
+            <th>
+              PinCode
+            </th>
+            <th>
+              Country
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Data) { // changing the Model to Model.Data 
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PinCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id= item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id= item.Id}) |
+                @Html.ActionLink("Delete", "Delete", new { id= item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ 
+
+<cs-pager cs-paging-pagesize=(int)Model.PageSize 
+cs-paging-pagenumber=(int)Model.PageNumber 
+cs-paging-totalitems=(int)Model.TotalItems 
+cs-pagenumber-param="pageNumber" 
+asp-controller="Hospitals"
+ 
+ Typo asp-action="Index" 
+ co-pagor-li-current-class="page-iton activo"
+ cs-pager-11-other-class="page-iter" 
+ cs-pager-11-non-active class="page ites disabled"
+ co-pagar-Link-current-class="page-link"
+ cs-pager Link-other-class="page-link"> </cs-pager> 
+
+
+

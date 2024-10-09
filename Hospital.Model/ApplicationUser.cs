@@ -31,4 +31,5 @@ namespace Hospital.Model
    {
         Male ,Female , Other
     }
-}
+} 
+

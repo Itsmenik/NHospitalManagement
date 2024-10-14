@@ -16,5 +16,8 @@
     <WebStackScaffolding_LayoutPageFile />
     <Area_SelectedScaffolderID>AreaScaffolder</Area_SelectedScaffolderID>
     <Area_SelectedScaffolderCategoryPath>root/Common</Area_SelectedScaffolderCategoryPath>
+    <DevExtremeCreateAsPartial>False</DevExtremeCreateAsPartial>
+    <DevExtremeUseLayout>True</DevExtremeUseLayout>
+    <DevExtremeSelectedDataContextName>ApplicationDbContext %28Hospital.Repositery%29</DevExtremeSelectedDataContextName>
   </PropertyGroup>
 </Project>

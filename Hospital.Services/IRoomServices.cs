@@ -9,7 +9,7 @@ using Hospital.ViewModel;
 
 namespace Hospital.Services
 {
-    interface IRoomServices
+    public interface IRoomServices
     { 
 
         PageResult<RoomViewModel> GetAll(int pageNumber, int pageSize);

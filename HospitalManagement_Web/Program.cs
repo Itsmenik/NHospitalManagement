@@ -30,6 +30,8 @@ builder.Services.AddScoped<IDefaultUserIntializer, DefaultUserIntializer>();
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();  
 builder.Services.AddTransient<IHospitalInfo, HospitalInofServices>();
+builder.Services.AddTransient<IRoomServices, RoomServices>();
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build(); 

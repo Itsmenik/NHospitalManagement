@@ -44,7 +44,8 @@ namespace Hospital.Services
                 vmList = ConvertToViewModelList(modelList);
 
 
-            }
+            } 
+
 
             catch (Exception ex)
             {
@@ -61,43 +62,46 @@ namespace Hospital.Services
 
         }
 
-        RoomViewModel IRoomServices.GetRoomById(int RoomId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public RoomViewModel GetHospitalById(int HospitalId)
-        {
-            var model = _unitOfWork.GenericRepository<Room>().GetById(HospitalId);
-            var vm = new RoomViewModel(model);
-            return vm;
-        }
 
         void IRoomServices.InsertRoom(RoomViewModel Room)
         {
-            throw new NotImplementedException();
+            var model = new RoomViewModel().ConvertViewModel(Room);
+            _unitOfWork.GenericRepository<Room>().Add(model);
+            _unitOfWork.Save();
         }
 
-        void IRoomServices.UpdateRoom(RoomViewModel Room)
-        {
-            var model = new RoomViewModel().ConvertViewModel(Room);
-            var ModelById=_unitOfWork.GenericRepository<Room>().GetById(model.Id);
-            ModelById.Type= Room.Type;
-            ModelById.RoomNumber = Room.RoomNumber;
-            ModelById.Status= Room.Status;
-            ModelById.HospitalId = Room.HospitalInfoId; 
-            _unitOfWork.GenericRepository<Room>(). Update(ModelById);
-            _unitOfWork.Save();  
-            
-        }
+ 
 
         private List<RoomViewModel> ConvertToViewModelList(List<Room> modelList)
         {
             return modelList.Select(x => new RoomViewModel(x)).ToList(); 
 
-        } 
+        }
 
+        public RoomViewModel GetRoomById(int RoomId)
+        {
+            var model = _unitOfWork.GenericRepository<Room>().GetById(RoomId);
+            var vm = new RoomViewModel(model);
+            return vm;
+        }
 
+        public void UpdateRoom(RoomViewModel Room)
+        {
+            var model = new RoomViewModel().ConvertViewModel(Room);
+            var ModelById = _unitOfWork.GenericRepository<Room>().GetById(model.Id);
+            ModelById.Type = Room.Type;
+            ModelById.RoomNumber = Room.RoomNumber;
+            ModelById.Status = Room.Status;
+            ModelById.HospitalId = Room.HospitalInfoId;
+            _unitOfWork.GenericRepository<Room>().Update(ModelById);
+            _unitOfWork.Save();
+        }
+
+        public void InsertRoom(RoomViewModel vm)
+        {
+            throw new NotImplementedException();
+        }
     }
 } 
 
+       

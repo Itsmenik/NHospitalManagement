@@ -1145,3 +1145,14 @@ we have to remove this part and the error is gone
      < span asp - validation -for= "Id" class= "text-danger" ></ span >
  </ div >
 
+
+                   ROOM Services and Contact Services 
+
+After that we are going to crate the Service for ContactServices  and IRoomServices 
+    here is the  implementation of he Iservices --> 
+
+
+
+After that we are going to create a Controller that is in the Admin in the Admin we are going to 
+    create the RoomController that where we are calling he call these service and then we have to 
+    ceate a view for the the Index where we are showing all the data 

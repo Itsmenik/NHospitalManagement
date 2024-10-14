@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj": {}
+    "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj": {
+    "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj",
+        "projectUniqueName": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj",
         "projectName": "Hospital.Model",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\obj\\",
+        "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj",
+        "packagesPath": "C:\\Users\\NIKHIL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NIKHIL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -28,7 +28,9 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -98,25 +100,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj": {
+    "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj",
+        "projectUniqueName": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj",
         "projectName": "Hospital.Repositery",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Repositery\\obj\\",
+        "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj",
+        "packagesPath": "C:\\Users\\NIKHIL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Repositery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NIKHIL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -126,7 +128,9 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -134,8 +138,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj"
+              "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj": {
+                "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj"
               }
             }
           }
@@ -208,25 +212,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj": {
+    "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj",
+        "projectUniqueName": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj",
         "projectName": "Hospital.Uitility",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Uitility\\obj\\",
+        "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Uitility\\Hospital.Uitility.csproj",
+        "packagesPath": "C:\\Users\\NIKHIL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Uitility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NIKHIL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -236,7 +240,9 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -244,11 +250,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj"
+              "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj": {
+                "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Repositery\\Hospital.Repositery.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj"
+              "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj": {
+                "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj"
               }
             }
           }
@@ -313,25 +319,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj": {
+    "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj",
+        "projectUniqueName": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj",
         "projectName": "Hospital.ViewModel",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.ViewModel\\obj\\",
+        "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.ViewModel\\Hospital.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\NIKHIL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NIKHIL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -341,7 +347,9 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -349,8 +357,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\HospitalManagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj"
+              "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj": {
+                "projectPath": "C:\\Users\\NIKHIL\\Desktop\\Hospitalmanagement\\NHospitalManagement\\Hospital.Model\\Hospital.Model.csproj"
               }
             }
           }
@@ -407,7 +415,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

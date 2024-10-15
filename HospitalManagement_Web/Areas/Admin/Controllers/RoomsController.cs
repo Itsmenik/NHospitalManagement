@@ -4,15 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalManagement_Web.Areas.Admin.Controllers
 {
-
-      [Area("Room")]
+    [Area("admin")]
     public class RoomsController : Controller
     {
+        private readonly IRoomServices _room;
 
-        private readonly RoomServices _room;
-
-
-        public RoomsController(RoomServices room)
+        // Constructor injection using the interface IRoomServices
+        public RoomsController(IRoomServices room)
         {
             _room = room;
         }
@@ -23,12 +21,10 @@ namespace HospitalManagement_Web.Areas.Admin.Controllers
             return View(_room.GetAll(pageNumber, pageSize));
         }
 
-
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var viewModel = _room.GetRoomById( id);
-           
+            var viewModel = _room.GetRoomById(id);
             return View(viewModel);
         }
 
@@ -44,11 +40,12 @@ namespace HospitalManagement_Web.Areas.Admin.Controllers
             _room.InsertRoom(vm);
             return Redirect("Index");
         }
-        public ActionResult Delete(int id) {
+
+        public ActionResult Delete(int id)
+        {
             _room.DeleteRoom(id);
             return Redirect("Index");
         }
-
-
     }
 }
+

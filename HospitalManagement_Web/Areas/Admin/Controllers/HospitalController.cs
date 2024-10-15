@@ -15,6 +15,7 @@ namespace HospitalManagement_Web.Areas.Admin.Controllers
         {
             _hospitalInfo = hospitalInfo;
         }
+
         [HttpGet] 
         
         public IActionResult Index(int pagNumber = 1 , int pageSize = 10 )
